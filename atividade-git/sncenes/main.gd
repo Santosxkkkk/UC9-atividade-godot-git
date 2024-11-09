@@ -1,0 +1,38 @@
+extends Node2D
+
+@onready var Guerreiro = preload("res://script/Guerreiro.gd")
+@onready var Arqueiro = preload("res://script/arqueiro.gd")
+@onready var Mago = preload("res://script/mago.gd")
+@onready var Curandeiro = preload("res://script/curandeiro.gd")
+@onready var Carro = preload("res://script/carro.gd")
+@onready var Moto = preload("res://script/moto.gd")
+@onready var Caminhao = preload("res://script/caminhao.gd")
+@onready var Bicicleta = preload("res://script/bicicleta.gd")
+
+
+
+func _ready() -> void:
+	var guerreiromortal = Guerreiro.new(0, 0)
+	var arqueiromagico = Arqueiro.new(0, 0)
+	var magofire = Mago.new(0, 0)
+	var curador = Curandeiro.new(0, 0)
+	magofire.lançar_magia(60, 40)
+	magofire.nivel_qi(30, 40)
+	guerreiromortal.atacar(0)
+	guerreiromortal.defender(0)
+	arqueiromagico.atirar_flecha(1000)
+	arqueiromagico.esquivar("Direita", "Direita")
+	curador.curar(50, 20)
+	curador.proteger(30, 50)
+	var caminhaozin = Caminhao.new(3, 0)
+	var motinha = Moto.new(10, 2)
+	var hotwells = Carro.new(0, 0)
+	var bike = Bicicleta.new(2, 2)
+	hotwells.abastecer(10)
+	hotwells.acelerar(10)
+	motinha.dar_graus()
+	motinha.acelerar_rapido()
+	caminhaozin.carregar()
+	caminhaozin.subir_rampa()
+	bike.frear()
+	bike.pedalar()

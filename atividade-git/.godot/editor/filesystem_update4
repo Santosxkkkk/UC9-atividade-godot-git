@@ -1,0 +1,6 @@
+res://sncenes/main.tscn
+res://script/bicicleta.gd
+res://script/caminhao.gd
+res://script/carro.gd
+res://sncenes/main.gd
+res://script/moto.gd
