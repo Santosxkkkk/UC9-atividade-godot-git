@@ -1,0 +1,11 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1731190516
+icon.svg::CompressedTexture2D::2201448800958483346::1731190516::1731190524::1::::<><>::
+::res://script/::1731190516
+arqueiro.gd::GDScript::-1::1731190516::0::1::::<>Node<>::
+curandeiro.gd::GDScript::-1::1731190516::0::1::::<>Node<>::
+Guerreiro.gd::GDScript::-1::1731190516::0::1::::<>Node<>::
+mago.gd::GDScript::-1::1731190516::0::1::::<>Node<>::
+::res://sncenes/::1731190516
+main.gd::GDScript::-1::1731190516::0::1::::<>Node2D<>::
+main.tscn::PackedScene::5456186382707090681::1731190516::0::1::::<><>::res://sncenes/main.gd
