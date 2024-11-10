@@ -4,6 +4,12 @@ extends Node2D
 @onready var Arqueiro = preload("res://script/arqueiro.gd")
 @onready var Mago = preload("res://script/mago.gd")
 @onready var Curandeiro = preload("res://script/curandeiro.gd")
+@onready var esp = preload("res://script/Espada.gd")
+@onready var esc = preload("res://script/Escudo.gd")
+@onready var armor = preload("res://script/armor.gd")
+@onready var potion = preload("res://script/pocao.gd")
+
+
 
 func _ready() -> void:
 	var guerreiromortal = Guerreiro.new(0, 0)
@@ -18,3 +24,15 @@ func _ready() -> void:
 	arqueiromagico.esquivar("Direita", "Direita")
 	curador.curar(50, 20)
 	curador.proteger(30, 50)
+	var caminhaozin = Caminhao.new(3, 0)
+	var motinha = Moto.new(10, 2)
+	var hotwells = Carro.new(0, 0)
+	var bike = Bicicleta.new(2, 2)
+	hotwells.abastecer(10)
+	hotwells.acelerar(10)
+	motinha.dar_graus()
+	motinha.acelerar_rapido()
+	caminhaozin.carregar()
+	caminhaozin.subir_rampa()
+	bike.frear()
+	bike.pedalar()
